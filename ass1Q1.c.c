@@ -19,10 +19,10 @@ int main() {
 		}    
     
     // Extract digits from the number and store them in an array
-    length = 1;
+    
     while (n> 0) 
 	{
-	
+	    length=1;
         digits[length] = n% 10;
         n/= 10;
         length++;
@@ -37,12 +37,13 @@ int main() {
             
 			printf("\n Three consecutive 3's starting from right to left at position %d",i);
             return 0;
+        }
     
     }
-}
-    
     // If no three consecutive 3's were found
-    printf("\n No three consecutive 3's ");
+        
+	printf("\n No three consecutive 3's ");
+          
 
     return 0;
 }
