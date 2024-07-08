@@ -1,0 +1,34 @@
+#include <stdio.h>
+
+int main() {
+    // Declare a character array (string)
+    char myString[20]; // This can hold up to 19 characters + '\0' (null terminator)
+
+    // Initialize the character array with a string
+    // Note: The '\0' at the end is automatically added to mark the end of the string.
+    strcpy(myString, "Hello, World!");
+
+    // Printing the entire string
+    printf("String: %s\n", myString);
+
+    // Accessing and printing individual characters in the string
+    printf("Individual characters:\n");
+    for (int i = 0; myString[i] != '\0'; i++) {
+        printf("Character at index %d: %c\n", i, myString[i]);
+    }
+
+    // Modifying the string
+    myString[7] = 'C'; // Change 'W' to 'C'
+    printf("Modified String: %s\n", myString);
+
+    // Concatenating strings
+    char greeting[20] = "Hi, ";
+    strcat(greeting, "there!");
+    printf("Concatenated String: %s\n", greeting);
+
+    // Finding the length of the string
+    int length = strlen(greeting);
+    printf("Length of the String: %d\n", length);
+
+    return 0;
+}
